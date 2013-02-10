@@ -4,7 +4,7 @@ class TwitterHandlesController < ApplicationController
   end
 
   def create
-    api_key = ENV['SUNLIGHT_KEY']
+    api_key = ENV['SUNLIGHT_KEY'] #Set in Heroku config
     url = "http://congress.api.sunlightfoundation.com/legislators/locate?apikey=#{api_key}&zip=#{params[:zip_code]}"
     response = HTTParty.get(url)
     representative_hash = response.parsed_response['results'].select {|n| n["chamber"] == "house"}.first
