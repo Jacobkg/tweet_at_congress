@@ -1,6 +1,6 @@
 <div class="container">
   <%= form_tag("/twitter_handles", :method => "post", :class => "form-signin") do %>
-    <h2 class="form-signin-heading">Tweet Your Rep</h2>
+    <h2 class="form-signin-heading">Tweet My Rep</h2>
     <%= text_field_tag(:zip_code, "", :class => "input-block-level", :placeholder => "Zip code...") %>
     <%= submit_tag("Find my representative", :class => "btn btn-large btn-primary") %>
   <% end %>
