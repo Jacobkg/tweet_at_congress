@@ -1,0 +1,13 @@
+Your Representative is: <%= params[:name] %><br/><br/>
+
+<% if params[:twitter_handle].present? %>
+<a href="https://twitter.com/intent/tweet?screen_name=<%=params[:twitter_handle]%>" class="twitter-mention-button" data-size="large">
+  Tweet to @BarackObama</a>
+<script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+      js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<% else %>
+  Sorry. We could not find the twitter handle for your representative
+<% end %>

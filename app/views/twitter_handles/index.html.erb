@@ -1,0 +1,5 @@
+<%= form_tag("/twitter_handles", :method => "post") do %>
+  <%= label_tag(:zip_Code, "Zip Code") %>
+  <%= text_field_tag(:zip_code) %>
+  <%= submit_tag("Find my representative") %>
+<% end %>
