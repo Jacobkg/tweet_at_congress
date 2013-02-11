@@ -52,3 +52,11 @@
   -moz-hyphens: auto;
   hyphens: auto;
 }
+
+footer {
+  margin-top: 300px;
+}
+
+.footer-text {
+  margin-left: 700px;
+}
