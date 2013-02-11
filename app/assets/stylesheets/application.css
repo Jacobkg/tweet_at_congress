@@ -42,3 +42,13 @@
   margin-bottom: 15px;
   padding: 7px 9px;
 }
+
+.petition-link {
+  max-width: 300px;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
