@@ -11,7 +11,7 @@ class TwitterHandlesController < ApplicationController
     twitter_id = representative_hash["twitter_id"]
     name = representative_hash["first_name"] + " " + representative_hash["last_name"]
 
-    redirect_to tweet_twitter_handles_path(:twitter_handle => twitter_id, :name => name)
+    redirect_to tweet_twitter_handles_path(:twitter_handle => twitter_id, :name => name, :text => params[:default_tweet_text])
   end
 
   def tweet

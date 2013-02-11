@@ -3,8 +3,8 @@
     Your Representative is: <%= params[:name] %><br/><br/>
 
     <% if params[:twitter_handle].present? %>
-    <a href="https://twitter.com/intent/tweet?screen_name=<%=params[:twitter_handle]%>"
-       class="twitter-mention-button" data-size="large">Tweet to @<%=params[:twitter_handle]%></a>
+      <a href="https://twitter.com/intent/tweet?screen_name=<%= params[:twitter_handle] %>&text=<%= u params[:text] %>"
+         class="twitter-mention-button" data-size="large">Tweet to @<%=params[:twitter_handle]%></a>
     <% else %>
       Sorry. We could not find the twitter handle for your representative
     <% end %>

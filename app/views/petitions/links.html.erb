@@ -1,0 +1,6 @@
+<div class="container">
+  <%= form_tag("/twitter_handles", :method => "post", :class => "form-signin") do %>
+    <h2 class="form-signin-heading">Petition Generated: </h2>
+    Share this link: <%= link_to twitter_handles_url(:text => params[:text]), twitter_handles_url(:text => params[:text]) %>
+  <% end %>
+</div>
