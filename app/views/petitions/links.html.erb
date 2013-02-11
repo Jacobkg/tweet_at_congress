@@ -2,7 +2,10 @@
   <%= form_tag("/twitter_handles", :method => "post", :class => "form-signin") do %>
     <h2 class="form-signin-heading">Petition Generated: </h2>
     <div class="petition-link">
-      Share this link: <%= link_to twitter_handles_url(:text => params[:text]), twitter_handles_url(:text => params[:text]) %>
+      Share this link:
+      <br/> <%= link_to twitter_handles_url(:text => params[:text]), twitter_handles_url(:text => params[:text]) %>
+      <br /><br />
+      Short Version: <%= link_to @short_link, @short_link %>
     </div>
   <% end %>
 </div>
