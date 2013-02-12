@@ -1,7 +1,5 @@
-<div class="container">
-  <%= form_tag("/petitions", :method => "post", :class => "form-signin") do %>
-    <h2 class="form-signin-heading">New Twitter Petition</h2>
-    <%= text_area_tag(:tweet_text, "", :class => "input-block-level", :placeholder => "Tweet text...", :autofocus => true) %>
-    <%= submit_tag("Generate Petition", :class => "btn btn-large btn-primary") %>
-  <% end %>
-</div>
+<%= form_tag("/petitions", :method => "post", :class => "form-signin") do %>
+  <h2 class="form-signin-heading">New Twitter Petition</h2>
+  <%= text_area_tag(:tweet_text, "", :class => "input-block-level", :placeholder => "Tweet text...", :autofocus => true) %>
+  <%= submit_tag("Generate Petition", :class => "btn btn-large btn-primary") %>
+<% end %>
