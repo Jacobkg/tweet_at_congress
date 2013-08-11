@@ -3,3 +3,7 @@
   <%= text_area_tag(:tweet_text, "", :class => "input-block-level", :placeholder => "Tweet text...", :autofocus => true) %>
   <%= submit_tag("Generate Petition", :class => "btn btn-large btn-primary") %>
 <% end %>
+
+<script type="text/javascript">
+    mixpanel.track_forms(".form-signin", "Created Petition");
+</script>
